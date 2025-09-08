@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+    
+    double x,y,z,Q,P,J;
+    
+    
+    cout << "Valor de x mayor a 0: " ;
+    cin >> x;
+    
+    cout << "Valor de y mayor a 0: ";
+    cin >> y;
+    
+    cout << "Valor de z mayor a 0: ";
+    cin >> z;
+    
+    
+
+    
+    
+    Q=(((2*x)+y)/z)*((y*y*y)-z);
+    P=((x+y+y+z+z+z)/(z-y-y-x-x-x))+(x*x)+(z*z);
+    J=Q/P;
+    
+    cout << J;
+    
+    
+    
+    
+
+    return 0;
+}
