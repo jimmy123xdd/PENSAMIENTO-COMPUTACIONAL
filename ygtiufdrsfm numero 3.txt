@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+    
+    double A,B,C,D;
+    
+    
+    cout << "Parte entera: " ;
+    cin >> A;
+    
+    cout << "Valor del numerador: ";
+    cin >> B;
+    
+    cout << "Valor del denominador: ";
+    cin >> C;
+    
+    D=(C*A)+B ;
+
+    
+    
+    cout << D <<"/"<< C   ;
+    
+    
+    
+    
+    
+    
+   
+
+    return 0;
+}
