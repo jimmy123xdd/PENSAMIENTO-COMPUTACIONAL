@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int d;
+    
+    cout << "CLAVE         ZONA         PRECIO"<<endl;
+    cout << "  12   AMERICA DEL NORTE     2"<<endl;
+    cout << "  15    AMERICA CENTRAL      2.2"<<endl;
+    cout << "  18    AMERICA DEL SUR      4.5"<<endl;
+    cout << "  19       EUROPA            3.5"<<endl;
+    cout << "  23       ASIA              6"<<endl;
+    cout << "  25      AFRICA             6"<<endl;
+    cout << "  29      OCEANIA             5"<<endl;
+    
+     int c;
+     float b;
+     cin >> c>>b;
+    switch(c){
+           case 12: 
+        cout << b*2;
+        break;
+            case 15:
+        cout << b*2.2;
+        break;
+             case 18: 
+        cout <<b*4.5;
+        break;
+                 case 19: 
+        cout <<b*3.5;
+        break;
+                    case 23: 
+        cout <<b*6;
+        break;
+                    case 25: 
+        cout <<b*6;
+        break;
+                          case 29: 
+        cout <<b*5;
+        break;
+     
+         default: 
+        cout << "Opcion Invalida" << endl;
+        break;
+    }
+    return 0;
+}
