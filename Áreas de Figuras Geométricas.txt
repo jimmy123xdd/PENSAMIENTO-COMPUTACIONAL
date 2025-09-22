@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int d;
+    cout << "1 CUADRADO"<<endl;
+    cout << "2 RECTANGULO"<<endl;
+    cout << "3 TRIANGULO"<<endl;
+    cout << "4 SALIR"<<endl;
+     int c;
+     float b,h;
+     cin >> c;
+    switch(c){
+           case 1: 
+        cin>>b;
+        cout << b*b;
+        break;
+            case 2: 
+         cin>>b>>h;
+        cout << b*h;
+        break;
+             case 3: 
+         cin>>b>>h;
+        cout <<(b*h)/2;
+        break;
+            case 4: 
+        cout <<"ADIOS";
+        break;
+         default: 
+        cout << "Opcion Invalida" << endl;
+        break;
+    }
+    return 0;
+}
