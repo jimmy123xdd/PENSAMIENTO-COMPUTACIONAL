@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int d;
+    cout << "1 SUMA"<<endl;
+    cout << "2 RESTA"<<endl;
+    cout << "3 MULTIPLICACION"<<endl;
+    cout << "4 DIVISION"<<endl;
+     int c,a,b;
+     cin >> c >> a >> b ;
+    switch(c){
+        case 1: 
+        cout << a+b;
+        break;
+         case 2: 
+        cout << a-b;
+        break;
+         case 3: 
+        cout << a*b;
+        break;
+         case 4: 
+        cout << a/b;
+        break;
+         default: 
+        cout << "error" << endl;
+        break;
+    }
+    return 0;
+}
