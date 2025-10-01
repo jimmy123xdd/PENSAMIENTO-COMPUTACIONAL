@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int x,z,y,v,b;
+    cin >> x;
+    if (x<0){
+        x=x*(-1);
+        }
+        else if(x>=100 and x<=999)   {
+        z=x/100;
+        y=x%100;
+        v=y/10;
+        b=y%10;
+        cout << b << v << z;
+    }
+    return 0;
+}
