@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    int A[n][n];
+   int i,j,a;
+   for(i=0; i<n; i++){
+       for(j=0; j<n; j++){
+          cin >> A[i][j];
+          }
+   }
+   int DP[n];
+   int DS[n];
+   for (i=0; i<n; i++){
+       DP[i]=A[i][i];
+       DS[i]=A[i][n-i+1];
+   }
+   for(i=0;i<n;i++){
+       cout << DP[i] << " ";
+       cout << endl;
+       
+   }
+   for(i=0;i<n;i++){
+     
+       cout << DS[i] ;
+   }
+   
+   
+   
+   
+    return 0;
+}
