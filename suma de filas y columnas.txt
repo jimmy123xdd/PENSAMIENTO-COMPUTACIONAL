@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    int A[n][n];
+   int i,j,a,c;
+   for(i=0; i<n; i++){
+       for(j=0; j<n; j++){
+          cin >> A[i][j];
+          }
+   }a=0;
+   for(i=0;i<n; i++){
+       int f=0;
+       for(j=0;j<n;j++){
+           f=f+A[i][j];
+       }
+       cout << f << endl;
+   }
+   for(j=0;j<n; j++){
+       int c=0;
+       for(i=0;i<n;i++){
+           c=c+A[i][j];
+       }
+       cout << c << endl;
+   } 
+       
+    return 0;
+}
