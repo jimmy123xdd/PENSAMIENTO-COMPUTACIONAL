@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+const int T0 = 0;
+const int T1 = 1;
+const int T2 = 1;
+int T(int n)
+{
+    if (n==0){
+        return 0;
+    } else if (n==1||n==2) {
+        return 1;
+    } else{
+        return T(n-1)+T(n-2)+T(n-3);
+    }
+}
+ 
+int main() {
+    int n;
+    cin >> n;
+   cout << T(n);
+   
+   
+   
+
+
+    return 0;
+}
