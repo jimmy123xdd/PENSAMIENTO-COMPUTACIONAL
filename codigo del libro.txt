@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct guardado {
+    int codigo;
+    string libro;
+};
+
+int main() {
+    guardado lir;
+
+    cout << "Nombre del libro: ";
+    getline(cin, lir.libro);
+
+    cout << "Codigo del libro: ";
+    cin >> lir.codigo;
+
+    cout << "Libro: " << lir.libro << endl;
+    cout << "Codigo: " << lir.codigo << endl;
+
+    return 0;
+}
