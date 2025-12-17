@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int A,B,C,*P;
+    cin >> A;
+    cin >> B;
+    C=A+B;
+    P=&C;
+    cout << C << endl;
+    *P=C+1;
+    cout << P << endl;
+    cout << C;
+    
+    
+    return 0;
+}
